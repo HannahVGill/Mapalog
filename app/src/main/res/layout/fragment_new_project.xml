@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_new_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.newProject.NewProjectFragment">
+
+    <TextView
+        android:id="@+id/text_new_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/new_project_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
+        android:text="Project name: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColor"/>
+
+    <EditText
+        android:id="@+id/new_project_name_input"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/new_project_name_label"
+        android:inputType="text"
+        android:hint="Max. 20 characters"
+        android:maxLength="20"
+        android:textSize="20sp"
+        android:textColor="@color/darkTextColor"/>
+
+    <Button
+        android:id="@+id/photograph_map_button_id"
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/text_new_project"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/default_button_theme_background"
+        android:text="@string/photograph_map_button_text"
+        android:textColor="@color/darkTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/retrieve_stored_map_button_id"
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/photograph_map_button_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/default_button_theme_background"
+        android:text="@string/retrieve_stored_map_button_text"
+        android:textColor="@color/darkTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

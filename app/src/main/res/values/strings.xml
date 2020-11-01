@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Mapalog</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mapalog</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_new_project">New project</string>
+    <string name="menu_new_project_alias">New project</string>
+    <string name="menu_saved_project">Saved project</string>
+    <string name="new_project_second">Mapalog</string>
+    <string name="nav_header_main">Mapalog</string>
+    <string name="launcher_app_name">Mapalog</string>
+    <string name="menu_home">Home</string>
+    <string name="new_project_button_text">New project</string>
+    <string name="saved_project_button_text">Saved project</string>
+    <string name="select_saved_project_button_text">Select\nsaved project</string>
+    <string name="photograph_map_button_text">Photograph\na map</string>
+    <string name="retrieve_stored_map_button_text">Retrieve a stored photo</string>
+    <string name="User_cancels_photo_toast">User cancelled taking a photo</string>
+    <string name="Photo_capture_failed">Photo capture failed</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_map">Map</string>
+    <string name="User_forgets_project_name_toast">Please enter a project name</string>
+    <string name="Photo_capture_orientation_prompt_toast">Take only non-copyrighted photos,\nportrait orientation works best</string>
+    <string name="Photo_load_orientation_prompt_toast">Load only non-copyrighted photos,\nportrait orientation works best</string>
+    <string name="User_should_rename_project">Rename as project name already exists.</string>
+    <string name="User_tries_loading_non_where_file">Unable to load this file.</string>
+    <string name="open_saved_project_button_text">open</string>
+    <string name="delete_saved_project_button_text">delete</string>
+    <string name="share_saved_project_button_text">share</string>
+    />
+</resources>

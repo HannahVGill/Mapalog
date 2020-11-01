@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imageViewMapPhoto" type="id" />
+    <item name="mapView" type="id" />
+    <item name="project_name_input_button" type="id" />
+    <item name="savedProjectListView" type="id" />
+</resources>

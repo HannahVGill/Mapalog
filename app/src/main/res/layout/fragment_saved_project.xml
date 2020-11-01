@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_saved_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.savedProject.SavedProjectFragment">
+
+    <TextView
+        android:id="@+id/text_saved_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/select_saved_project_button_id"
+        android:layout_width="240dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/text_saved_project"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/default_button_theme_background"
+        android:text="@string/select_saved_project_button_text"
+        android:textColor="@color/darkTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/list_saved_project_files"
+        android:layout_width="296dp"
+        android:layout_height="336dp"
+        android:layout_below="@id/select_saved_project_button_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:dividerHeight="4dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorAccent" />
+
+    <RelativeLayout
+        android:layout_height="100dp"
+        android:layout_width="248dp"
+        android:layout_below="@id/list_saved_project_files"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" >
+
+        <ImageButton
+            android:id="@+id/open_saved_project_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_button_theme_background"
+            android:text="@string/open_saved_project_button_text"
+            android:textColor="@color/darkTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:src="@drawable/ic_set_geotag"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/delete_saved_project_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_button_theme_background"
+            android:layout_toRightOf="@id/open_saved_project_button_id"
+            android:text="@string/delete_saved_project_button_text"
+            android:textColor="@color/darkTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:src="@drawable/ic_delete_saved_project"
+            android:layout_marginEnd="24dp"
+            />
+
+        <ImageButton
+            android:id="@+id/share_saved_project_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_button_theme_background"
+            android:layout_toRightOf="@id/delete_saved_project_button_id"
+            android:text="@string/share_saved_project_button_text"
+            android:textColor="@color/darkTextColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:src="@drawable/ic_share_saved_project"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

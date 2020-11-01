@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/nav_drawer_group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home"
+            android:textSize="24sp"/>
+        <item
+            android:id="@+id/nav_new_project"
+            android:icon="@drawable/ic_menu_new_project"
+            android:title="@string/menu_new_project_alias"
+            android:textSize="24sp"/>
+        <item
+            android:id="@+id/nav_saved_project"
+            android:icon="@drawable/ic_menu_saved_projects"
+            android:title="@string/menu_saved_project"
+            android:textSize="24sp"/>
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_map"
+            android:title="@string/menu_map"
+            android:textSize="24sp"/>
+    </group>
+</menu>

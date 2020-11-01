@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mapalog.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_new_project"
+            app:destination="@id/nav_new_project" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_saved_project"
+            app:destination="@id/nav_saved_project" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_new_project"
+        android:name="com.example.mapalog.ui.newProject.NewProjectFragment"
+        android:label="@string/menu_new_project"
+        tools:layout="@layout/fragment_new_project" >
+        <action
+            android:id="@+id/action_nav_new_project_to_nav_map"
+            app:destination="@id/nav_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_saved_project"
+        android:name="com.example.mapalog.ui.savedProject.SavedProjectFragment"
+        android:label="@string/menu_saved_project"
+        tools:layout="@layout/fragment_saved_project" >
+        <action
+            android:id="@+id/action_nav_saved_project_to_nav_map"
+            app:destination="@id/nav_map" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.mapalog.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_personalise_tracker"-->
+<!--        android:name="com.example.mapalog.ui.personaliseMarkers.PersonaliseMarkersFragment"-->
+<!--        android:label="@string/menu_personalise_tracker"-->
+<!--        tools:layout="@layout/fragment_personalise_markers" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_nav_personalise_tracker_to_nav_map"-->
+<!--            app:destination="@id/nav_map" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_help"-->
+<!--        android:name="com.example.mapalog.ui.help.HelpFragment"-->
+<!--        android:label="@string/menu_help"-->
+<!--        tools:layout="@layout/fragment_help" />-->
+
+</navigation>
